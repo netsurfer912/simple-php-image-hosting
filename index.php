@@ -8,7 +8,7 @@ $baseurl = $_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])
 ?>
 <html>
 <head>
-	<!-- This simple image service is brought to you by netsurfer912, based on https://github.com/Spittie/simple-php-image-hosting-->
+	<!-- This simple image sharing service is brought to you by netsurfer912, based on https://github.com/Spittie/simple-php-image-hosting-->
     <title><?php print $title; ?></title>
 	
 	<meta name="description" content="A simple image sharing service. ">
