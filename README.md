@@ -20,4 +20,4 @@ I guess I can just put CC-BY-NA-SA on it.
 
 # Warranty #
 
-I can't guarantee anything. 
+I can't guarantee anything. But since I'm using it myself, I'll make sure it's safe to use. 
