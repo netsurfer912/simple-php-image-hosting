@@ -49,9 +49,9 @@ $baseurl = $_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])
 			$imgurl = 'http://'.$baseurl.'/'.$newname;
 			print '<br />';
 			print 'Direct link:<br />';
-			print '<div>'.$imgurl.'</div><br /><br />';
+			print '<input type="text" value="'.$imgurl.'""><br /><br />';
 			print 'BB-Code:<br />';
-			print '<div>[img]'.$imgurl.'[/img]</div><br /><br />';
+			print '<input type="text" value="[img]'.$imgurl.'[/img]"><br /><br />';
 			print 'Preview:<br />';
 			print '<a href="'.$imgurl.'"><img src="'.$imgurl.'" /></a><br />';
 		}
