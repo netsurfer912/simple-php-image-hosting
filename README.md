@@ -1,3 +1,6 @@
+# Demo #
+A demo is avaiable [here](http://stuff.atomiccamel.com/img/ "here")
+
 # Installation #
 1. Install a webserver
 2. Install PHP
@@ -14,9 +17,6 @@
 # License #
 Since the original code was licensed under the "Do what ever the fuck you want" license, 
 I guess I can just put CC-BY-NA-SA on it. 
-
-# Demo #
-A demo is avaiable [here](http://stuff.atomiccamel.com/img/ "here")
 
 # Warranty #
 
