@@ -9,26 +9,33 @@ $baseurl = $_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])
 <html>
 <head>
 	<!-- This simple image service is brought to you by netsurfer912, based on https://github.com/Spittie/simple-php-image-hosting-->
-    <title><?php print $title; ?></title>
-<link rel='stylesheet' href='normal.css' />
-<link rel='stylesheet' media='(max-width: 800px)' href='small.css' />
+    	
+    	<title><?php print $title; ?></title>
+	
+	<meta name="description" content="A simple image sharing service. ">
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel='stylesheet' href='normal.css' />
+	<link rel='stylesheet' media='(max-width: 800px)' href='small.css' />
+	
 </head>
 <body>
 	<h1>Upload your image. </h1>
 	<div id="upload">
 		<form enctype="multipart/form-data" action="<?php print $_SERVER['PHP_SELF']; ?>" method="POST">
-		<input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
-		Choose a file to upload: <br />
-		<input size="62"  name="file" type="file" accept="image/*" />
-		<input type="submit" value="Upload Image" />
+			<input type="hidden" name="MAX_FILE_SIZE" value="52428800" />
+			Choose a file to upload: <br />
+			<input size="62"  name="file" type="file" accept="image/*" />
+			<input type="submit" value="Upload Image" />
 		</form>
+		
 		<div id="info">
-		Maximal file size: 50MB <br/>
-		All images allowed <br/>
+			Maximal file size: 50MB <br/>
+			All images allowed <br/>
 		</div>
 	</div>
 	<div id="image">
-	<a name="image">
+		<a name="image">
 <?php
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
