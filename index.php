@@ -9,8 +9,7 @@ $baseurl = $_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])
 <html>
 <head>
 	<!-- This simple image service is brought to you by netsurfer912, based on https://github.com/Spittie/simple-php-image-hosting-->
-    	
-    	<title><?php print $title; ?></title>
+    <title><?php print $title; ?></title>
 	
 	<meta name="description" content="A simple image sharing service. ">
 	<meta name="viewport" content="width=device-width">
@@ -28,7 +27,6 @@ $baseurl = $_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])
 			<input size="62"  name="file" type="file" accept="image/*" />
 			<input type="submit" value="Upload Image" />
 		</form>
-		
 		<div id="info">
 			Maximal file size: 50MB <br/>
 			All images allowed <br/>
@@ -51,9 +49,9 @@ $baseurl = $_SERVER['HTTP_HOST'].dirname($_SERVER['REQUEST_URI'])
 			$imgurl = 'http://'.$baseurl.'/'.$newname;
 			print '<br />';
 			print 'Direct link:<br />';
-			print '<input type="text" value="'.$imgurl.'" readonly="readonly"><br /><br />';
+			print '<div>'.$imgurl.'</div><br /><br />';
 			print 'BB-Code:<br />';
-			print '<input type="text" value="[img]'.$imgurl.'[/img]" readonly="readonly"><br /><br />';
+			print '<div>[img]'.$imgurl.'[/img]</div><br /><br />';
 			print 'Preview:<br />';
 			print '<a href="'.$imgurl.'"><img src="'.$imgurl.'" /></a><br />';
 		}
